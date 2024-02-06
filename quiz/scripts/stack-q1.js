@@ -23,6 +23,14 @@ class PStackImpl extends PStack {
   pop() {
     return this._persons.pop().age
   }
+
+  get persons() {
+    return this._persons;
+  }
+
+  set persons(p) {
+    this._persons = p;
+  }
 }
 
 let pstack = new PStackImpl();
